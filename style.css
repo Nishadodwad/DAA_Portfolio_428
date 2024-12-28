@@ -207,12 +207,15 @@ header.sticky{
 
 .portfolio-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    align-items: start; /* Replaced 'left' with a valid value */
-    justify-content: start; /* Optional for horizontal alignment */
-    gap: 2rem;
-    margin-top: 5rem;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Ensure responsive layout */
+    align-items: start; /* Align items at the top */
+    justify-content: start; /* Align grid items horizontally to the left */
+    gap: 2rem; /* Space between items */
+    margin-top: 5rem; /* Margin for top spacing */
+    width: 100%; /* Ensure container uses full width */
+    box-sizing: border-box; /* Include padding/margin in size */
 }
+
 
 .row img{
     height: auto;
