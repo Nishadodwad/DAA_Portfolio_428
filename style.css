@@ -205,13 +205,15 @@ header.sticky{
     color: var(--main-color);
 }
 
-.portfolio-content{
+.portfolio-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
-    align-items: left;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    align-items: start; /* Replaced 'left' with a valid value */
+    justify-content: start; /* Optional for horizontal alignment */
     gap: 2rem;
     margin-top: 5rem;
 }
+
 .row img{
     height: auto;
     width: 100%;
