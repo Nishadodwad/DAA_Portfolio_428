@@ -253,6 +253,79 @@ header.sticky{
     cursor: pointer;
 }
 
+/* General Section Styles */
+.course_project {
+    padding: 50px;
+    background: #12141c;
+    color: var(--text-color);
+}
+
+.course_project .main-text h2 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--main-color);
+    margin-bottom: 10px;
+}
+
+.course_project .main-text h4 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Portfolio Content */
+.portfolio-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Project Details */
+.project-detail {
+    background: #1a1c25;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.4s ease;
+}
+
+.project-detail:hover {
+    transform: translateY(-5px);
+}
+
+.project-detail .icon-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.project-detail .icon-title i {
+    font-size: 24px;
+    color: var(--main-color);
+}
+
+.project-detail h3 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.project-detail p,
+.project-detail ul {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.project-detail ul {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+.project-detail ul li {
+    margin-bottom: 10px;
+}
+
 .contact {
     padding: 40px;
     text-align: center;
