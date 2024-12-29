@@ -84,9 +84,9 @@ section{
     line-height: 1.1;
     letter-spacing: 2px;
 }
-span{
+/*span{
     color: var(--main-color);
-}
+}*/
 .home-text h4{
     color: var(--main-color);
     font-size: 24px;
