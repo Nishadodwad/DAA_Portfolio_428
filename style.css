@@ -119,16 +119,14 @@ header.sticky{
     background: var(--bg-color);
     border-bottom: 1px solid #0e1630;
 }
-/* Ensure the section spans the full width of the viewport */
+/*  Ensure the section spans the full width of the viewport */
 .course_details {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Ensure responsive layout */
     align-items: start; /* Align items at the top */
     justify-content: start; /* Align grid items horizontally to the left */
     gap: 2rem; /* Space between items */
-    margin-top: 0; 
-    padding-top: 0;
-    padding-bottom: 0;/* Margin for top spacing */
+    margin-top: 5rem; /* Margin for top spacing */
     width: 100%; /* Ensure container uses full width */
     box-sizing: border-box; 
     
@@ -170,6 +168,9 @@ header.sticky{
         font-size: 1rem;
     }
 }*/
+
+
+
 
 
 
