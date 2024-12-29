@@ -122,9 +122,13 @@ header.sticky{
 /* Ensure the section spans the full width of the viewport */
 .course_details {
     display: grid;
-    grid-template-rows: repeat(5, 1fr);
-    align-items: start;
-    gap: 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Ensure responsive layout */
+    align-items: start; /* Align items at the top */
+    justify-content: start; /* Align grid items horizontally to the left */
+    gap: 2rem; /* Space between items */
+    margin-top: 5rem; /* Margin for top spacing */
+    width: 100%; /* Ensure container uses full width */
+    box-sizing: border-box; 
     
 }
 
