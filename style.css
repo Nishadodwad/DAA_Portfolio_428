@@ -123,21 +123,12 @@ header.sticky{
 .course_details {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    align-items: start; /* Align items to the start */
+    align-items: center;
     gap: 2rem;
     width: 100%; /* Ensure the container spans the full width of the viewport */
     max-width: 100%; /* Prevents any constraints on the container's width */
-    padding: 0 2rem; /* Adds padding for better spacing on smaller screens */
-    box-sizing: border-box; /* Ensure padding does not cause overflow */
-}
-
-.course_details-text {
-    width: 100%;
-}
-
-.course_details-text h2 {
-    font-size: var(--h2-font); /* Ensure the h2 font size is properly set */
-    margin-bottom: 1rem;
+    box-sizing: border-box; /* Ensures padding doesn't cause overflow */
+    padding: 0 1rem; /* Adds padding for better spacing on smaller screens */
 }
 
 .course_details-text h4 {
@@ -147,19 +138,16 @@ header.sticky{
     font-weight: 600;
 }
 
-.course_details-text h6 {
+.course_details-text h2 {
+    font-size: var(--h2-font);
+}
+
+.course_details-text p {
     color: var(--second-color);
     font-size: var(--p-font);
-    line-height: 1.6;
+    line-height: 30px;
     margin-bottom: 2rem;
 }
-
-.course_details-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-
 @media (max-width: 768px) {
     /* For smaller screens, adjust grid to stack the columns vertically */
     .course_details {
