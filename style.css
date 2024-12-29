@@ -122,13 +122,10 @@ header.sticky{
 /* Ensure the section spans the full width of the viewport */
 .course_details {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
     gap: 2rem;
-    width: 100%; /* Ensure the container spans the full width of the viewport */
-    max-width: 100%; /* Prevents any constraints on the container's width */
-    box-sizing: border-box; /* Ensures padding doesn't cause overflow */
-    padding: 0 1rem; /* Adds padding for better spacing on smaller screens */
+    
 }
 
 .course_details-text h4 {
