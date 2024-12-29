@@ -290,11 +290,13 @@ header.sticky{
 }
 
 .team-member h4 {
+    color: black;
     margin-bottom: 10px;
     font-size: 1.2em;
 }
 
 .team-member p {
+    color: black;
     margin: 5px 0;
 }
 
