@@ -122,7 +122,7 @@ header.sticky{
 /* Ensure the section spans the full width of the viewport */
 .course_details {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
     align-items: start;
     gap: 2rem;
     
