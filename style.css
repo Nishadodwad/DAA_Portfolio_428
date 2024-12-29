@@ -126,7 +126,9 @@ header.sticky{
     align-items: start; /* Align items at the top */
     justify-content: start; /* Align grid items horizontally to the left */
     gap: 2rem; /* Space between items */
-    margin-top: 5rem; /* Margin for top spacing */
+    margin-top: 0; 
+    padding-top: 0;
+    padding-bottom: 0;/* Margin for top spacing */
     width: 100%; /* Ensure container uses full width */
     box-sizing: border-box; 
     
@@ -149,7 +151,7 @@ header.sticky{
     line-height: 30px;
     margin-bottom: 2rem;
 }
-/* @media (max-width: 768px) {
+ @media (max-width: 768px) {
     
     .course_details {
         grid-template-columns: 1fr; 
@@ -167,7 +169,7 @@ header.sticky{
     .course_details-text h6 {
         font-size: 1rem;
     }
-}*/
+}
 
 
 
