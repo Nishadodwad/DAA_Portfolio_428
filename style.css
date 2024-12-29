@@ -253,62 +253,49 @@ header.sticky{
     cursor: pointer;
 }
 
-.contact{
+.contact {
+    padding: 40px;
+    text-align: center;
+}
+
+.contact-text h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.contact-text h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.team-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    gap: 3rem;
-}
-.contact-text h4{
-    margin: 15px 0;
-    color: var(--main-color);
-    font-size: 20px;
-    font-weight: 600;
-}
-.contact-text h2{
-    font-size: var(--h2-font);
-}
-.contact-text p{
-    color: var(--second-color);
-    font-size: var(--p-font);
-    line-height: 30px;
-    margin-bottom: 2rem;
-}
-.contact-list{
-    margin-bottom: 3rem;
-}
-.contact-list li{
-    margin-bottom: 10px;
-    display: block;
-}
-.contact-list li a{
-    display: block;
-    color: var(--second-color);
-    font-size: var(--p-font);
-    font-weight: 600;
-    transition: all .40s ease;
-}
-.contact-list li a:hover{
-    transform: scale(1.01) translateY(-5px);
-    color: var(--main-color);
-}
-.contact-icons i{
-    height: 40px;
-    width: 40px;
-    background: #12141c;
-    border-radius: 0.5rem;
-    color: var(--main-color);
-    display: inline-flex;
-    align-items: center;
+    gap: 20px;
     justify-content: center;
-    font-size: 18px;
-    margin-right: 10px;
-    transition: all .40s ease;
 }
-.contact-icons i:hover{
-    transform: scale(1.01) translateY(-5px);
-    color: var(--text-color);
-    background: var(--main-color);
+
+.team-member {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.team-member h4 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.team-member p {
+    margin: 5px 0;
 }
 
 /* .contact-form form{
