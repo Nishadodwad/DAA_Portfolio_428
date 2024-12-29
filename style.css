@@ -277,7 +277,7 @@ header.sticky{
 
 .team-member {
     background-color: #12141c;
-    color: black;
+    color: white;
     padding: 20px;
     border-radius: 10px;
     text-align: left;
@@ -290,13 +290,13 @@ header.sticky{
 }
 
 .team-member h4 {
-    color: black;
+    color: white;
     margin-bottom: 10px;
     font-size: 1.2em;
 }
 
 .team-member p {
-    color: black;
+    color: white;
     margin: 5px 0;
 }
 
