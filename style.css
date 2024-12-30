@@ -449,6 +449,24 @@ header.sticky{
     color: white;
     margin: 5px 0;
 }
+/* Styling for the Business Case Title */
+.business-title {
+    color: #ffcc00; /* Yellow for contrast */
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 5px;
+}
+
+/* Styling for each Business Case */
+.business-case {
+    color: #dcdcdc; /* Light grey for readability */
+    font-style: italic;
+    font-size: 1em;
+    margin: 2px 0;
+    padding-left: 10px; /* Slight indentation for alignment */
+    border-left: 3px solid #ffcc00; /* Highlight with a left border */
+}
+
 .team-image {
     width: 100px;               /* Set the diameter of the circular image */
     height: 100px;              /* Ensure height matches width for a perfect circle */
