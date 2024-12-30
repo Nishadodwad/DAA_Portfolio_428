@@ -874,3 +874,159 @@ img{
         grid-template-columns: 1fr;
     }
 }
+
+
+
+
+
+
+
+/* Cards Container */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+}
+
+/* Individual Card Styling */
+.card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+/* Hover Effect on Cards */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon Styling */
+.card .icon {
+    background: linear-gradient(135deg, #3498db, #8e44ad);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+/* Card Title */
+.card h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+/* Card Description */
+.card p {
+    font-size: 1rem;
+    color: #7f8c8d;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .cards-container {
+        grid-template-columns: 1fr; /* Stacks cards on small screens */
+    }
+}
+/* Style the DAA section */
+#daa {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Style the video to cover the background */
+#daa .video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+/* Style the content to appear above the video */
+#daa .content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Optional: Make it responsive */
+@media (max-width: 768px) {
+    #daa .content {
+        padding: 20px;
+    }
+    #daa {
+        height: 70vh;
+    }
+}
+/* Basic styling for the slide container */
+.slide-container {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    margin: 10px 0;
+}
+
+.slide h3 {
+    font-size: 1.5rem;
+    color: #2196F3;
+}
+
+.slide p {
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Navigation Buttons */
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2rem;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+}
+
+.prev-btn {
+    left: 0;
+}
+
+.next-btn {
+    right: 0;
+}
