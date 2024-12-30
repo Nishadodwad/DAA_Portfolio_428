@@ -280,13 +280,11 @@ text-transform: capitalize;>Problem  Statement</span></h3>
        
 
     <!-- Full Code Implementation Block -->
-      <div class="block" data-aos="fade-up">
-        <h2> Full Code Implementation (C++)</h2>
-        
-        <!-- Code Editor Block -->
-        <div class="code-editor">
-          <button class="run-btn" onclick="simulateCodeRun()">Run Code</button>
-          <pre><code class="cpp">
+   <div class="block" data-aos="fade-up">
+    <h2>Full Code Implementation (C++) - Business Case 1</h2>
+    <div class="code-editor">
+        <button class="run-btn" onclick="simulateCodeRunBC1()">Run Code</button>
+        <pre><code class="cpp">
 #include <iostream>
 #include <vector>
 #include <queue>
@@ -383,24 +381,22 @@ int main() {
     return 0;
 }
 
-          </code></pre>
-        </div>
-
-        <!-- Output Block -->
-        <div id="output" class="output"></div>
-      </div>
+         </code></pre>
+    </div>
+    <div id="outputBC1" class="output"></div>
+</div>
     </div>
   </section>
 
   <li></li>
 
  <script>
-  function simulateCodeRun() {
-    document.getElementById('output').innerHTML = `
+ function simulateCodeRunBC1() {
+    document.getElementById('outputBC1').innerHTML = `
     Simulated Output: Shortest Distance from Stop 0 to Stop 9: 12 units.<br>
     Path: 0 -> 1 -> 3 -> 8 -> 9
     `;
-  }
+}
 </script>
 
  <div class="project-detail">
@@ -426,12 +422,10 @@ int main() {
 
  <!-- Full Code Implementation Block -->
       <div class="block" data-aos="fade-up">
-        <h2> Full Code Implementation (C++)</h2>
-        
-        <!-- Code Editor Block -->
-        <div class="code-editor">
-          <button class="run-btn" onclick="simulateCodeRunn()">Run Code</button>
-          <pre><code class="cpp">
+    <h2>Full Code Implementation (C++) - Business Case 2</h2>
+    <div class="code-editor">
+        <button class="run-btn" onclick="simulateCodeRunBC2()">Run Code</button>
+        <pre><code class="cpp">
 #include <iostream>
 #include <vector>
 #include <string>
@@ -534,27 +528,25 @@ int main() {
     return 0;
 }
 
-          </code></pre>
-        </div>
-
-        <!-- Output Block -->
-        <div id="output" class="output"></div>
-      </div>
+        </code></pre>
+    </div>
+    <div id="outputBC2" class="output"></div>
+</div>
     </div>
   </section>
 
   <li></li>
 
  <script>
-  function simulateCodeRunn() {
-    document.getElementById('output').innerHTML = `
-    Simulated Output:Search Results for "Nisha":
-Ticket ID: T12345
-User Name: Nisha
-Travel Date: 2024-12-01
-Status: Confirmed
+  function simulateCodeRunBC2() {
+    document.getElementById('outputBC2').innerHTML = `
+    Simulated Output: Search Results for "Nisha":<br>
+    Ticket ID: T12345<br>
+    User Name: Nisha<br>
+    Travel Date: 2024-12-01<br>
+    Status: Confirmed
     `;
-  }
+}
 </script>
 
 
