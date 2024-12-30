@@ -315,7 +315,6 @@ text-transform: capitalize;>Problem  Statement</span></h3>
 
 
 
-
     <!-- Full Code Implementation Block -->
       <div class="block" data-aos="fade-up">
         <h2>4. Full Code Implementation (C++)</h2>
@@ -444,6 +443,75 @@ int main() {
 Path: 0 -> 1 -> 9';
     }
   </script>
+
+
+
+
+        <script>
+  async function simulateCodeRun() {
+    const code = `
+#include <iostream>
+#include <vector>
+#include <queue>
+#include <climits>
+using namespace std;
+struct Edge { int destination; int weight; };
+void dijkstra(int source, int destination, vector<vector<Edge>> &graph) {
+    int n = graph.size();
+    vector<int> distance(n, INT_MAX);
+    vector<int> parent(n, -1);
+    priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;
+    distance[source] = 0;
+    pq.push({0, source});
+    while (!pq.empty()) {
+        int currentDistance = pq.top().first;
+        int currentStop = pq.top().second;
+        pq.pop();
+        if (currentStop == destination) break;
+        for (const Edge &edge : graph[currentStop]) {
+            int nextStop = edge.destination;
+            int weight = edge.weight;
+            if (distance[currentStop] + weight < distance[nextStop]) {
+                distance[nextStop] = distance[currentStop] + weight;
+                parent[nextStop] = currentStop;
+                pq.push({distance[nextStop], nextStop});
+            }
+        }
+    }
+    cout << "Shortest Distance: " << distance[destination] << "\\n";
+}
+int main() {
+    const int n = 10, e = 15;
+    vector<vector<Edge>> graph(n);
+    vector<tuple<int, int, int>> routes = {
+        {0, 1, 4}, {0, 2, 3}, {1, 2, 1}, {1, 3, 2}, {2, 3, 4},
+        {3, 4, 2}, {4, 5, 6}, {5, 6, 3}, {5, 7, 1}, {6, 7, 4},
+        {7, 8, 2}, {8, 9, 3}, {1, 9, 7}, {3, 8, 6}, {2, 6, 5}
+    };
+    for (const auto &[u, v, w] : routes) {
+        graph[u].push_back({v, w});
+        graph[v].push_back({u, w});
+    }
+    dijkstra(0, 9, graph);
+    return 0;
+}
+`;
+    const response = await fetch('https://judge0-ce.p.rapidapi.com/submissions', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'X-RapidAPI-Key': 'YOUR_RAPIDAPI_KEY',
+      },
+      body: JSON.stringify({
+        source_code: code,
+        language_id: 54, // 54 is C++ (GCC 9.2.0)
+      }),
+    });
+
+    const result = await response.json();
+    document.getElementById('output').innerHTML = result.stdout || 'Error occurred.';
+  }
+</script>
 
 </body>
 </html>
