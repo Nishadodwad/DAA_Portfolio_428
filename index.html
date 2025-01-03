@@ -44,8 +44,7 @@
    <section class="about-course" id="about-course">
     <div class="main-text">
         <h2>About Course</h2>
-        <h4>Course Instructor : Arundati Aralimatti</h4>
-        <h4>Course code : 24ECSC205</h4>
+        <h4>Explore the Core Clusters of Algorithmic Learning</h4>
     </div>
 
     <div class="course-content">
@@ -379,7 +378,7 @@ By optimizing routes and reducing unnecessary travel, this initiative helps lowe
    <div class="block" data-aos="fade-up">
     <h2>Full Code Implementation (C++) - Business Case 1</h2>
     <div class="code-editor">
-       
+        <button class="run-btn" onclick="simulateCodeRunBC1()">Run Code</button>
         <pre><code class="cpp">
 #include <iostream>
 #include <vector>
@@ -479,40 +478,6 @@ int main() {
 
          </code></pre>
     </div>
-     <div class="portfolio-content">
-        <div class="project-detail">
-            <div class="icon-title">
-                <i class="fas fa-question-circle"></i>
-                <h3>Sample Input</span></h3>
-            </div>
-            <p>
-              Welcome to Garudhanagar
-We know that your time is precious
-So we are here to save your time
-Let's make our lives better with the help of fantastic algorithms
-
-Available Stops:
-1. Temple
-2. Engineering College
-3. City Stadium
-4. Agricultural University
-5. Airport
-6. Old Age Home
-7. Central Hospital
-8. Medical College
-9. Metro Station
-10. City Bank
-11. Municipal Office
-12. City Public School
-13. Vegetable Market
-14. Mini Vidhanasoudha
-15. Gruha Nagar
-
-Enter the source stop number: 1
-Enter the destination stop number: 4</p> 
-                 <button class="run-btn" onclick="simulateCodeRunBC1()">Run Code</button>
-        </div>
-
     <div id="outputBC1" class="output"></div>
 </div>
  <!--   </div>  -->
@@ -523,9 +488,8 @@ Enter the destination stop number: 4</p>
  <script>
  function simulateCodeRunBC1() {
     document.getElementById('outputBC1').innerHTML = `
-    Simulated Output: Shortest Distance from Temple to Agricultural University: 5 kms.
-Estimated Time to Reach: 10.00 minutes.
-Path: Temple -> Engineering College -> Agricultural University
+    Simulated Output: Shortest Distance from Stop 0 to Stop 9: 12 units.<br>
+    Path: 0 -> 1 -> 3 -> 8 -> 9
     `;
 }
 </script>
